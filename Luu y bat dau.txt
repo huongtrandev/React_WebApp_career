@@ -1,0 +1,7 @@
+Các extension cần cài:
+Eslint
+npm
+tslint
+auto close tag
+auto import
+Code spell checker

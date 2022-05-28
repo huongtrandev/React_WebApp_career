@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo_1</title>
+  </head>
+  <body>
+    <!-- <div id="message">A paragraph</div>
+    <button class="btn btn-primary">Save</button>
+    <script>
+      const p = document.getElementById("message");
+      console.log(p);
+    </script> -->
+    <div id="app">
+      <header>
+        <nav>
+          <ul id="menu">
+            <li class="item">HTML</li>
+            <li class="item">CSS</li>
+            <li class="item highlight">JavaScript</li>
+            <li class="item">TypeScript</li>
+          </ul>
+        </nav>
+        <h1>getElementsByClassName Demo</h1>
+      </header>
+      <section>
+        <article>
+          <h2 class="heading-secondary">Example 1</h2>
+        </article>
+        <article>
+          <h2 class="heading-secondary">Example 2</h2>
+        </article>
+      </section>
+    </div>
+    <script>
+      let menu = document.getElementById("menu");
+      let items = menu.getElementsByClassName("item");
+      let data = [].map.call(items, (item) => item.textContent); // cần lời giải thích chỗ này
+      console.log(data);
+    </script>
+  </body>
+</html>
