@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li class="first">Home</li>
+      <li>Products</li>
+      <li class="current">Customer Support</li>
+      <li>Careers</li>
+      <li>Investors</li>
+      <li>News</li>
+      <li class="last">About Us</li>
+    </ul>
+    <script>
+      let content = document.getElementById("menu");
+      let firstChild = content.firstChild.nodeName;
+      let lastChild = content.lastElementChild;
+      let children = content.children;
+      console.log(firstChild);
+      console.log(lastChild);
+      console.log(children);
+    </script>
+    <!-- <p id="para-01"><span>First span</span></p> -->
+
+    <!-- <script>
+      const p01 = document.getElementById("para-01");
+      console.log(p01.firstChild.nodeName);
+      //nodeName is about name of nodeType, nodeName is a Property of node
+    </script> -->
+  </body>
+</html>
