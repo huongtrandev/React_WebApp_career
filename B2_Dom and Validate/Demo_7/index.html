@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button id="btnSend">Send</button> -->
+    <!-- <button>Hello World</button>
+    <script>
+      let btnSend = document.getElementById("btnSend");
+      if (btnSend) {
+        btnSend.setAttribute("name", "send");
+        console.log(name);
+        // btnSend.setAttribute("disabled", "");
+      }
+    </script> -->
+    <!-- <script>
+      var b = document.querySelector("button");
+      b.setAttribute("name", "");
+      b.setAttribute("disabled", "");
+    </script> -->
+    <div class="class1" id="main" data-test="stuff" nonStandard="1234"></div>
+    <script>
+      var div = document.getElementsByTagName("div")[0];
+
+      //get specific attributes
+      document.write(
+        "Name: class Value: " + div.getAttribute("class") + "<br>"
+      );
+      document.write("Name: ID Value: " + div.getAttribute("ID") + "<br>");
+      document.write(
+        "Name: DATA-TEST Value: " + div.getAttribute("DATA-TEST") + "<br>"
+      );
+      document.write(
+        "Name: nonStandard Value: " + div.getAttribute("nonStandard") + "<br>"
+      );
+
+      //create custom attribute
+      div.setAttribute("customTest", "567");
+
+      //retreive custom attribute
+      document.write(
+        "Name: customTest Value: " + div.getAttribute("customTest") + "<br>"
+      );
+    </script>
+  </body>
+</html>
