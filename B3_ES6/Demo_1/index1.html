@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Person(fullName, age) {
+        this.fullName = fullName;
+        this.age = age;
+        this.getInfo = function () {
+          return function () {
+            console.log(this.constructor.name); // Tại sao lại console ra Window
+            console.log("tôi là " + this.fullName + "." + this.age + " Tuổi");
+          };
+        };
+      }
+      var p = new Person("Mỹ Linh", 18);
+      var printInfo = p.getInfo();
+      printInfo();
+    </script>
+    <script>
+      function Person(fullName, age) {
+        this.fullName = fullName;
+        this.age = age;
+        this.getInfo = function () {
+          return () => {
+            console.log(this.constructor.name); // Cải này thì lại ra Person ???
+            console.log(`Tôi là ${this.fullName} . ${this.age} tuổi`);
+            // console.log(`Tôi là ${this.fullName}. ${this.age} tuổi`);
+          };
+        };
+      }
+      var p = new Person("Mỹ Linh", 18);
+      var printInfo = p.getInfo();
+      printInfo();
+    </script>
+  </body>
+</html>
