@@ -11,14 +11,30 @@
 // // passing function as an argument
 // greet("Peter", callMe);
 
-function greet() {
-  console.log("hello world");
-}
+// function greet() {
+//   console.log("hello world");
+// }
 
+// function sayName(name) {
+//   console.log("hello" + " " + name);
+// }
+
+// //calling function
+// setTimeout(greet, 2000);
+// sayName("John");
+
+// Callback function example
+function greet(name, myFunction) {
+  console.log("hello world");
+
+  // callback function
+  //executed only after the greet() is executed
+  myFunction(name);
+}
+//call back function
 function sayName(name) {
   console.log("hello" + " " + name);
 }
 
-//calling function
-setTimeout(greet, 2000);
-sayName("John");
+//calling the function after 2 seconds
+setTimeout(greet, 2000, "John", sayName);
