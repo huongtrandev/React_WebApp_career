@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const form = (
-  <div className="container" d-flex align-items-center text-center>
+  <div className="container d-flex align-items-center text-center">
     <div className="form-signin">
       <form>
         <img
@@ -37,7 +37,8 @@ const form = (
         </div>
         <div className="checkbox mb-3">
           <label>
-            <input type="checkbox">Remember Me</input>
+            <input type="checkbox" />
+            &nbsp;Remember Me
           </label>
         </div>
         <button className="w-100 btn btn-lg btn-primary" type="submit">
